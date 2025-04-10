@@ -14,19 +14,19 @@ By the end of this project, your group must deliver the following:
 
 1.	Manage your project on GitHub and follow proper Git workflows (branching, pull requests, code reviews). Document the process of how you use Git workflows to collaborate with your team members.
 
-1.	Containerize your application for builds and deployments. Upload and download your container images to a public or private image repository (e.g., Docker Hub or GitHub Container Registry). Ensure a container image is built with unique build tag(s) matching the triggering commit from any branch.
+2.	Containerize your application for builds and deployments. Upload and download your container images to a public or private image repository (e.g., Docker Hub or GitHub Container Registry). Ensure a container image is built with unique build tag(s) matching the triggering commit from any branch.
 
-1.	Set up an automated CI/CD with Jenkins in a Codespace environment. Configure the pipeline to trigger upon pull requests merging changes into the main branch.
+3.	Set up an automated CI/CD with Jenkins in a Codespace environment. Configure the pipeline to trigger upon pull requests merging changes into the main branch.
 
-1.	Document the CI/CD process and provide clear instructions on replicating your environment. Submit a video demo at the end of the project.
+4.	Document the CI/CD process and provide clear instructions on replicating your environment. Submit a video demo at the end of the project.
 
 ### Existing Pipelines
 You will also demonstrate the delivery of the following process and artifacts that come with the project.
 
-1.	Run static analysis quality-gating using SonarQube
-1.	Performance testing with Jmeter
-1.	Security analysis with OWASP's "DependencyCheck"
-1.	Build Javadocs
+5.	Run static analysis quality-gating using SonarQube
+6.	Performance testing with Jmeter
+7.	Security analysis with OWASP's "DependencyCheck"
+8.	Build Javadocs
 
 
 ## Evaluation Criteria
