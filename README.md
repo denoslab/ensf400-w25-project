@@ -1,58 +1,63 @@
-# ENSF 400 - Winter 2025 - Course Project
+# ENSF 400 - CI/CD Project
 
-## Project Overview
+This repository contains the source code and materials for the ENSF 400 CI/CD project. The project demonstrates a complete CI/CD pipeline for an example application.
 
-In this project, you will work based on a software project by incorporating/extending a complete CI/CD (Continuous Integration/Continuous Deployment) pipeline. This is based on an open-source sample application: https://github.com/7ep/demo
+## Table of Contents
+- [Repository Setup](#repository-setup)
+- [Git Workflow & Collaboration](#git-workflow--collaboration)
+- [Containerization](#containerization)
+- [CI/CD Pipeline](#ci-cd-pipeline)
+- [Testing & Code Quality](#testing--code-quality)
+- [Documentation & Demo](#documentation--demo)
+- [Team Members](#team-members)
 
-This project can also be any application that requires the project of build, test, and deployment.
-You will leverage GitHub for source control, Docker for containerizing your application, and a CI/CD tool (Jenkins) to automate the build, testing, and verification process. The goal is to validate every code change automatically through container builds, unit tests, code quality checks, and end-to-end functional tests.
+## Repository Setup
 
+- **Public Repository:**  
+  This repository is public to allow all team members to contribute.
+  
+- **Team Participation:**  
+  All team members are added as collaborators. Contributions are documented in the Team Members section.
 
-## Project Requirements
+## Git Workflow & Collaboration
 
-By the end of this project, your group must deliver the following:
+We follow the GitHub Flow with these practices:
 
-1.	Manage your project on GitHub and follow proper Git workflows (branching, pull requests, code reviews). Document the process of how you use Git workflows to collaborate with your team members.
+1. **Branching Strategy:**  
+   - All development work happens on feature branches created from the `main` branch.
+   - Feature branch names follow the pattern: `feature/<description>` (e.g., `feature/add-ci-pipeline`).
 
-2.	Containerize your application for builds and deployments. Upload and download your container images to a public or private image repository (e.g., Docker Hub or GitHub Container Registry). Ensure a container image is built with unique build tag(s) matching the triggering commit from any branch.
+2. **Pull Requests (PRs):**  
+   - Once a feature is complete, a pull request is created against `main`.
+   - Each PR requires at least one peer review and must pass CI checks before merging.
+   - The `main` branch is protected so that only tested and reviewed code is merged.
 
-3.	Set up an automated CI/CD with Jenkins in a Codespace environment. Configure the pipeline to trigger upon pull requests merging changes into the main branch.
+3. **Code Reviews:**  
+   - Team members review PRs, leave feedback, and request changes.
+   - Any requested changes should be committed on the same branch.
+   - Once approved, the feature branch is merged into `main`.
 
-4.	Document the CI/CD process and provide clear instructions on replicating your environment. Submit a video demo at the end of the project.
+4. **Merging:**  
+   - After approvals and successful CI, the PR is merged, and feature branches are optionally deleted.
 
-### Existing Pipelines
-You will also demonstrate the delivery of the following process and artifacts that come with the project.
+## Containerization
 
-5.	Run static analysis quality-gating using SonarQube
-6.	Performance testing with Jmeter
-7.	Security analysis with OWASP's "DependencyCheck"
-8.	Build Javadocs
+*Details for Docker containerization will be added in the next stage.*
 
+## CI/CD Pipeline
 
-## Evaluation Criteria
+*Jenkins-based CI/CD pipeline configuration will be detailed and integrated shortly.*
 
-Your project will be assessed on the following criteria:
+## Testing & Code Quality
 
-### GitHub Repository & Git Workflow (15%)
-1.	Project on GitHub in a public repository with all team members participating in the development and maintenance of the project (5%).
-1.	Demonstrate the process practicing Git workflows (branching, pull requests, code reviews) (10%).
+*Automated tests and quality reports (e.g., SonarQube and JMeter) will be included.*
 
-### Containerization (20%)
-1.	Dockerfile to containerize the project (5%).
-1.	Use of container image repository to upload and download images (5%).
-1.	Effective tagging mechanism for each building matching the commits/branches/pull requests (10%).
+## Documentation & Demo
 
-### CI/CD Pipeline Automation (40%)
-1.	Jenkins integration with GitHub in Codespace (10%).
-1.	Triggering automated checks upon pull request to the main branch (10%).
-1.	Deployment process to automatically deploy the application in the Codespace environment upon a build (10%).
-1.	Be able to run items 5-8 in **Existing Pipelines** (10%).
+*Comprehensive documentation and a demo video (≤ 10 minutes) will be provided, showcasing the complete workflow and individual contributions.*
 
-### Testing & Code Quality (10%)
-1.	Generate test coverage reports upon each automated build (5%).
-1.	Generate code quality report using SonarQube reports upon each automated build (5%).
+## Team Members
 
-### Documentation & Demo (15%)
-1.	Clarity and completeness of README and other documentation. The documentation must demonstrate the team’s collaboration process (5%).
-1.	Demonstration video with a length not exceeding 10 minutes, showing a clear understanding of the pipeline and its benefits. The documentation must demonstrate the team’s collaboration process (10%).
-
+- **HamzaIkhurram** – Repository setup, Git workflow, CI/CD integration.
+- **Teammate1** – Docker containerization & deployment automation.
+- **Teammate2** – Automated testing & code quality analysis.
