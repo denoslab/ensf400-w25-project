@@ -9,3 +9,4 @@ When this change is submitted as a pull request to the main branch, Jenkins shou
 3. Generate a SonarQube analysis report
 
 This test is for the ENSF 400 Course Project - Checkin 2 requirements.
+# Additional test content
